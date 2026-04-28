@@ -19,8 +19,3 @@ sudo nginx -t
 sudo systemctl reload nginx
 ```
 
-Current production server:
-
-```text
-43.161.250.225:/var/www/site
-```
