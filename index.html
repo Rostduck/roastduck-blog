@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Roastduck 的个人主页，记录旅行、学习、工具和开源项目。">
+  <title>Roastduck | 旅行、学习与开源记录</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #667085;
+      --line: #dce3ec;
+      --accent: #256c6f;
+      --soft: #eef6f5;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+    header {
+      display: grid;
+      grid-template-columns: 76px 1fr;
+      gap: 18px;
+      align-items: center;
+      padding: 22px 0 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .avatar {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2f6f73, #89b9aa);
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-size: 32px;
+      font-weight: 700;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      font-weight: 650;
+      letter-spacing: 0;
+    }
+    .bio {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin: 18px 0 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    nav span:first-child {
+      color: var(--accent);
+      font-weight: 650;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 1.65fr .95fr;
+      gap: 18px;
+      align-items: start;
+    }
+    section,
+    article {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 18px;
+      font-weight: 650;
+    }
+    h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      font-weight: 650;
+    }
+    .time,
+    .meta {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 0;
+      line-height: 1.75;
+      font-size: 15px;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .tag {
+      background: var(--soft);
+      color: var(--accent);
+      border: 1px solid #cfe4e1;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+    }
+    .project {
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+    }
+    .project:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 14px;
+    }
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+    @media (max-width: 760px) {
+      .layout { grid-template-columns: 1fr; }
+      header { grid-template-columns: 60px 1fr; }
+      .avatar {
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="avatar">R</div>
+      <div>
+        <h1>Roastduck</h1>
+        <p class="bio">普通上班族，喜欢旅行、语言学习、自动化工具和一点点开源折腾。这里主要记录路线、读书笔记、踩坑经验和小项目。</p>
+      </div>
+    </header>
+
+    <nav>
+      <span>动态</span>
+      <span>旅行</span>
+      <span>学习</span>
+      <span>项目</span>
+      <span>关于</span>
+    </nav>
+
+    <div class="layout">
+      <div>
+        <article>
+          <div class="time">2026-04-28 16:40</div>
+          <h2>最近在整理自己的小服务器和备份流程</h2>
+          <p>把常用服务、脚本和配置统一归档，顺便写了几份恢复说明。以前迁移环境总是靠记忆，现在尽量让每一步都有记录，下一次就不必从头猜。</p>
+          <div class="tags">
+            <span class="tag">自动化</span>
+            <span class="tag">Linux</span>
+            <span class="tag">备份</span>
+          </div>
+        </article>
+
+        <article>
+          <div class="time">2026-04-20 21:15</div>
+          <h2>东京三日路线草稿</h2>
+          <p>这次想把行程安排得松一点：第一天上野和浅草，第二天去镰仓看海，第三天留给书店、咖啡和随便乱走。旅行最好的部分经常不在计划里，但计划能让人更安心。</p>
+          <div class="tags">
+            <span class="tag">旅行</span>
+            <span class="tag">东京</span>
+            <span class="tag">路线</span>
+          </div>
+        </article>
+
+        <article>
+          <div class="time">2026-04-12 08:30</div>
+          <h2>英语听力练习记录</h2>
+          <p>最近用播客做影子跟读，每天二十分钟。重点不是听懂每个词，而是先习惯语速、重音和停顿。能复述三四句完整表达，就算当天完成。</p>
+          <div class="tags">
+            <span class="tag">学习</span>
+            <span class="tag">英语</span>
+            <span class="tag">习惯</span>
+          </div>
+        </article>
+      </div>
+
+      <aside>
+        <section>
+          <h2>GitHub 项目</h2>
+          <div class="project">
+            <h3><a href="https://github.com/Rostduck/" rel="nofollow">Rostduck/scripts</a></h3>
+            <p class="meta">日常用的小脚本集合，主要是备份、日志整理和服务器初始化。</p>
+          </div>
+          <div class="project">
+            <h3><a href="https://github.com/Rostduck/" rel="nofollow">Rostduck/travel-notes</a></h3>
+            <p class="meta">旅行路线、预算和地点清单，方便以后复用。</p>
+          </div>
+          <div class="project">
+            <h3><a href="https://github.com/Rostduck/" rel="nofollow">Rostduck/study-board</a></h3>
+            <p class="meta">用 Markdown 记录语言学习、阅读和每周复盘。</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>最近计划</h2>
+          <ul>
+            <li>整理 NAS 和云端备份策略</li>
+            <li>补完日本旅行交通笔记</li>
+            <li>每周整理一篇英文听力材料</li>
+            <li>把常用命令做成速查页</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>关于</h2>
+          <p>喜欢把事情做得简单一点：工具少一点，说明清楚一点，生活慢一点。</p>
+        </section>
+      </aside>
+    </div>
+
+    <footer>roastduck.xyz · personal notes and tiny projects · <a href="https://github.com/Rostduck/" rel="nofollow">GitHub</a></footer>
+  </main>
+</body>
+</html>
